@@ -3653,6 +3653,7 @@ body {
     overflow: visible !important;
     opacity: 1 !important;
     pointer-events: auto !important;
+    background-color: #000;
     transform: translateX(-50%) scale(var(--screen2-scale)) !important;
     transform-origin: top center !important;
   }
@@ -3669,7 +3670,7 @@ body {
     background-position: center top;
     background-size: 1780px auto;
     pointer-events: none;
-    z-index: 1000;
+    z-index: 1;
   }
 
   .maze-group {
@@ -3690,6 +3691,14 @@ body {
   .boat-scene-shell,
   .scan-scene-shell {
     opacity: 1 !important;
+  }
+
+  .road-runner-shell,
+  .screen3,
+  .boat-scene-shell,
+  .scan-scene-shell {
+    position: relative !important;
+    z-index: 2 !important;
   }
 
   .maze-ui {
@@ -3743,6 +3752,8 @@ body {
     top: -1000px !important;
     left: 20px !important;
     width: 560px !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   .road-runner-track {
@@ -3751,6 +3762,12 @@ body {
     box-shadow:
       0 0 0 4px rgba(86, 16, 0, 0.9),
       0 0 28px rgba(255, 122, 38, 0.24) !important;
+  }
+
+  .road-runner-ui,
+  .road-runner-instructions {
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   .chipmunk-shell {
